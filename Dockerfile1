@@ -1,0 +1,2 @@
+FROM demo-quayecosystem-quay-quay-enterprise.apps.quay-152.qe.devcluster.openshift.com/devteam/app1
+CMD [ "date" ]
