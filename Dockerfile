@@ -1,20 +1,20 @@
-FROM node:carbon
-
+FROM demo-quayecosystem-quay-quay-enterprise.apps.quay-152.qe.devcluster.openshift.com/qateam/app2
+CMD [ "date" ]
 
 # Create app directory
-WORKDIR /usr/src/app
+#WORKDIR /usr/src/app
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
-COPY package*.json ./
+#COPY package*.json ./
 
-RUN npm install
+#RUN npm install
 # If you are building your code for production
 # RUN npm install --only=production
 
 # Bundle app source
-COPY . .
+#COPY . .
 
-EXPOSE 8080
-CMD [ "npm", "start" ]
+#EXPOSE 8080
+#CMD [ "npm", "start" ]
